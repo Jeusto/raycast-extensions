@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "openai-api-usage2",
+  "name": "openai-api-usage",
   "title": "OpenAI API Usage",
   "description": "Check your OpenAI API usage from the menu bar",
   "icon": "command-icon.png",
