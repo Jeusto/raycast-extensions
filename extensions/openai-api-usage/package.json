@@ -3,7 +3,7 @@
   "name": "openai-api-usage",
   "title": "OpenAI API Usage",
   "description": "Check your OpenAI API usage from the menu bar",
-  "icon": "command-icon.png",
+  "icon": "icon.png",
   "author": "asaday",
   "categories": [
     "Other"
@@ -11,7 +11,7 @@
   "license": "MIT",
   "commands": [
     {
-      "name": "index",
+      "name": "usage",
       "title": "API Usage",
       "description": "Check your OpenAI API usage",
       "mode": "menu-bar",
