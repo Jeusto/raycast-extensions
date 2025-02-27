@@ -1,0 +1,60 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "raindrop-instant-save",
+  "title": "Raindrop Instant Save",
+  "description": "Quickly add the current tab or selected file to Raindrop.io.",
+  "icon": "icon.png",
+  "author": "asaday",
+  "license": "MIT",
+  "preferences": [
+    {
+      "name": "token",
+      "type": "password",
+      "required": true,
+      "title": "Access Token",
+      "description": "Your Raindrop.io Test Access Token.",
+      "link": "https://developer.raindrop.io/v1/authentication/token",
+      "placeholder": "Enter your Randrop.io Test Access token."
+    }
+  ],
+  "commands": [
+    {
+      "name": "quick-save",
+      "title": "Quick add to Raindrop",
+      "description": "Add the current tab open in your browser to Raindrop.io.",
+      "mode": "no-view"
+    },
+    {
+      "name": "quick-save-all-tabs",
+      "title": "Quick add all tabs to Raindrop",
+      "description": "Add all tabs open in your browser to Raindrop.io.",
+      "mode": "no-view"
+    },
+    {
+      "name": "save-to-collection",
+      "title": "Add to Raindrop collection",
+      "description": "Add the current tab open in your browser to Raindrop.io.",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.68.1",
+    "@raycast/utils": "^1.12.5",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.6",
+    "@types/node": "20.8.10",
+    "@types/react": "18.2.27",
+    "eslint": "^8.51.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
