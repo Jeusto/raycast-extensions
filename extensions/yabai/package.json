@@ -1,0 +1,82 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "yabai",
+  "title": "Yabai",
+  "description": "Control Yabai Window Manager",
+  "icon": "command-icon.png",
+  "author": "asaday",
+  "categories": [
+    "System"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "start",
+      "title": "Start Yabai",
+      "description": "",
+      "mode": "no-view"
+    },
+    {
+      "name": "stop",
+      "title": "Stop Yabai",
+      "description": "",
+      "mode": "no-view"
+    },
+    {
+      "name": "restart",
+      "title": "Restart Yabai",
+      "description": "",
+      "mode": "no-view"
+    },
+    {
+      "name": "toggle-float",
+      "title": "Toggle Float",
+      "description": "",
+      "mode": "no-view"
+    },
+    {
+      "name": "maximize-window",
+      "title": "Maximize Window",
+      "description": "",
+      "mode": "no-view"
+    },
+    {
+      "name": "balance-windows",
+      "title": "Balance Windows",
+      "description": "",
+      "mode": "no-view"
+    },
+    {
+      "name": "change-layout",
+      "title": "Change Layout",
+      "description": "",
+      "mode": "no-view"
+    },
+    {
+      "name": "menubar-status",
+      "title": "Menubar Status",
+      "subtitle": "Current status",
+      "description": "",
+      "mode": "menu-bar"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.66.2",
+    "@raycast/utils": "^1.12.4"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.6",
+    "@types/node": "20.8.10",
+    "@types/react": "18.2.27",
+    "eslint": "^8.51.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
